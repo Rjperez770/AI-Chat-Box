@@ -15,7 +15,7 @@ model = OllamaLLM(model="llama3")
 prompt = ChatPromptTemplate.from_template(template)
 chain = prompt | model
 
-def handle_conversation():
+def handle_conversation():#Will keep on running until the user enters or hits exit   
   context = ""
   print("Welcome to the AI ChatBot, Type 'exit' to quit")
   while True:
@@ -26,3 +26,6 @@ def handle_conversation():
     result= chain.invoke({"context": context, "question": user_input})
     print("Bot: ", result)
     context += f"\nUser: {user_input}\nAI: {result}"
+
+if __name__ == "__main__":#making sure it execute this python file
+  handle_conversation()
