@@ -1,1 +1,2 @@
 # AI-Chat-Box
+This project implements a local AI chatbot utilizing Python and the Ollama framework to leverage the power of Llama 3, a state-of-the-art language model with 8 billion parameters. The goal is to create an interactive and efficient chatbot that runs locally, offering privacy and reduced dependency on external API calls. This solution is ideal for applications requiring reliable, offline AI interactions without compromising on computational power.
